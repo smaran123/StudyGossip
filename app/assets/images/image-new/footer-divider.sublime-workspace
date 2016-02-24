@@ -1,0 +1,484 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"se",
+				"seller_organization"
+			],
+			[
+				"sel",
+				"seller_email"
+			],
+			[
+				"exp",
+				"expected_price"
+			],
+			[
+				"in",
+				"insurence_valid_till"
+			],
+			[
+				"when",
+				"when_to_sell"
+			],
+			[
+				"regist",
+				"registration_at"
+			],
+			[
+				"registr",
+				"registration_no"
+			],
+			[
+				"tr",
+				"transmission"
+			],
+			[
+				"for",
+				"form-control"
+			],
+			[
+				"txt",
+				"txtOrg"
+			],
+			[
+				"Organ",
+				"Oraganization"
+			],
+			[
+				"A",
+				"At"
+			],
+			[
+				"select",
+				"selecttransmission"
+			],
+			[
+				"name",
+				"Name"
+			],
+			[
+				"bootstrap",
+				"bootstrap-responsive"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 75.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/rails/StudyGossip/app/models/admin.rb",
+		"/home/rails/StudyGossip/app/models/attendance.rb",
+		"/home/rails/projects/DM/dinemediacom/app/assets/stylesheets/css/colors.css",
+		"/home/rails/projects/DM/dinemediacom/app/assets/stylesheets/css/style.css",
+		"/home/rails/projects/DM/dinemediacom/app/views/dashboards/products.html.erb",
+		"/home/rails/projects/DM/dinemediacom/app/assets/stylesheets/css/flexslider.css",
+		"/home/rails/projects/DM/dinemediacom/app/assets/stylesheets/css/bootstrap.css",
+		"/home/rails/projects/DM/dinemediacom/app/assets/stylesheets/application.css",
+		"/home/rails/projects/DM/dinemediacom/app/views/layouts/application.html.erb",
+		"/home/rails/projects/DM/dinemediacom/app/controllers/dashboards_controller.rb",
+		"/home/rails/projects/GreatWorkPerk/app/controllers/profiles_controller.rb",
+		"/home/rails/projects/GreatWorkPerk/app/views/profiles/_supplier.html.erb",
+		"/home/rails/projects/GreatWorkPerk/app/views/profiles/profile.html.erb",
+		"/home/rails/projects/GreatWorkPerk/app/views/profiles/_photo.html.erb",
+		"/home/rails/projects/GreatWorkPerk/app/views/profiles/photo.html.erb",
+		"/home/rails/projects/GreatWorkPerk/app/views/profiles/_individual_user.html.erb",
+		"/home/rails/projects/GreatWorkPerk/app/views/profiles/_employee.html.erb",
+		"/home/rails/projects/GreatWorkPerk/app/views/profiles/_company.html.erb",
+		"/home/rails/projects/GreatWorkPerk/app/views/profiles/change_password.js.erb",
+		"/home/rails/projects/GreatWorkPerk/app/controllers/perks_controller.rb",
+		"/home/rails/projects/GreatWorkPerk/app/controllers/users_controller.rb",
+		"/home/rails/projects/carsapp/db/migrate/20141219070227_create_sell_cars.rb",
+		"/home/rails/projects/carsapp/app/views/homes/sell_car.html.erb",
+		"/home/rails/Untitled Document 2",
+		"/home/rails/mywork/used/go4usedcars.com/SANajax.php",
+		"/home/rails/projects/go4usedcars/app/assets/stylesheets/application.css",
+		"/home/rails/mywork/used/go4usedcars.com/admin/procure-enquiry.php",
+		"/home/rails/projects/backup/usedcars/app/views/home/index.html.erb",
+		"/home/rails/projects/backup/usedcars/app/assets/stylesheets/bootstrap-responsive.css",
+		"/home/rails/mywork/used/go4usedcars.com/sellacar.php",
+		"/home/rails/projects/carsapp/app/controllers/admin/stocks_controller.rb",
+		"/home/rails/projects/carsapp/app/views/admin/stocks/procure_enquiry.html.erb",
+		"/home/rails/projects/carsapp/app/assets/stylesheets/css/bootstrap-responsive.css",
+		"/home/rails/projects/carsapp/app/assets/javascripts/application.js",
+		"/home/rails/projects/carsapp/app/assets/stylesheets/application.css",
+		"/home/rails/projects/carsapp/db/migrate/20141222132908_add_status_to_sell_cars.rb",
+		"/home/rails/projects/carsapp/app/controllers/application_controller.rb",
+		"/home/rails/projects/carsapp/config/routes.rb",
+		"/home/rails/projects/carsapp/app/views/admin/shared/_stocks_navbar.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/admin.html.erb",
+		"/home/rails/projects/carsapp/app/helpers/application_helper.rb",
+		"/home/rails/projects/carsapp/config/application.rb",
+		"/home/rails/projects/carsapp/app/views/layouts/application.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_footer_link_delhi.html.erb",
+		"/home/rails/projects/carsapp/app/assets/stylesheets/css/flexslider.css",
+		"/home/rails/projects/carsapp/app/views/admin/vehicles/load_car_model.js.erb",
+		"/home/rails/projects/carsapp/app/views/admin/stocks/_load_carmodels.html.erb",
+		"/home/rails/projects/carsapp/app/helpers/admin/car_specifications_helper.rb",
+		"/home/rails/projects/carsapp/app/views/admin/images/new.html.erb",
+		"/home/rails/projects/carsapp/app/views/admin/dashboards/index.html.erb",
+		"/home/rails/projects/carsapp/app/controllers/admin/dashboards_controller.rb",
+		"/home/rails/projects/carsapp/app/views/devise/sessions/new.html.erb",
+		"/home/rails/projects/carsapp/app/assets/stylesheets/css/style.css",
+		"/home/rails/projects/carsapp/app/assets/stylesheets/css/bootstrap.min.css",
+		"/home/rails/projects/carsapp/config/environments/production.rb",
+		"/home/rails/projects/carsapp/Gemfile",
+		"/home/rails/projects/carsapp/app/mailers/requirement_mailer.rb",
+		"/home/rails/projects/carsapp/config/environments/development.rb",
+		"/home/rails/projects/carsapp/config/database.yml",
+		"/home/rails/projects/carsapp/app/views/homes/_buy_car_bangalore.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_post_requirements.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_header_banner.html.erb",
+		"/home/rails/projects/carsapp/app/models/sell_car.rb",
+		"/home/rails/projects/carsapp/app/controllers/homes_controller.rb",
+		"/home/rails/projects/carsapp/db/seeds.rb",
+		"/home/rails/projects/carsapp/app/views/layouts/_headernav.html.erb",
+		"/home/rails/Documents/usedcarspublichtml/sellacar.php",
+		"/home/rails/projects/carsapp/app/models/varient.rb",
+		"/home/rails/projects/carsapp/app/views/homes/associates_partners.html.erb",
+		"/home/rails/projects/carsapp/app/controllers/associate_partners_controller.rb",
+		"/home/rails/projects/carsapp/app/views/requirement_mailer/associate_partner.html.erb",
+		"/home/rails/projects/carsapp/app/views/requirement_mailer/send_requirement.html.erb",
+		"/home/rails/projects/carsapp/app/mailers/requirement.rb",
+		"/home/rails/projects/carsapp/app/controllers/associatepartners_controller.rb",
+		"/home/rails/projects/carsapp/app/controllers/testimonials_controller.rb",
+		"/home/rails/projects/carsapp/app/views/homes/_home_bangalore.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_home_delhi.html.erb",
+		"/home/rails/projects/carsapp/app/views/requirement/send_requirement.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/index.html.erb",
+		"/home/rails/hanu/svrfarms-final.com/details.html",
+		"/home/rails/hanu/svrfarms-final.com/gmaps4rails.css",
+		"/home/rails/workertasks/app/views/tasks/_form.html.erb",
+		"/home/rails/projects/carsapp/app/controllers/careers_controller.rb",
+		"/home/rails/hanu/svrfarms-final.com/results.html",
+		"/home/rails/projects/carsapp/app/views/homes/auto_finance.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_footer.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_footer_link_bangalore.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/buy_car.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_contact_us_bangalore.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/faq.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_internal_layouts_delhi.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_internal_layouts_bangalore.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_internal_layouts.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_contact_us_delhi.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_about_us_delhi.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_about_us_bangalore.html.erb",
+		"/home/rails/Downloads/contact-us1.html",
+		"/home/rails/projects/carsapp/app/views/homes/careers.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/testimonial.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/contact_us.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/insurance.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/_buy_car_delhi.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/about_us.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/home.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/delhi.html.erb",
+		"/home/rails/projects/carsapp/app/assets/stylesheets/css/jquery-ui1.11.2.css",
+		"/home/rails/projects/carsapp/app/views/layouts/_header_script.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_header_styles.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_header1.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_footer2.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_header2.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_footer1.html.erb",
+		"/home/rails/projects/carsapp/app/views/layouts/_footer3.html.erb",
+		"/home/rails/projects/carsapp/app/views/homes/bangalore.html.erb",
+		"/home/rails/projects/carsapp/README.rdoc",
+		"/home/rails/.config/sublime-text-3/Packages/Default/Preferences.sublime-settings",
+		"/home/rails/.config/sublime-text-3/Packages/User/Preferences.sublime-settings",
+		"/home/rails/projects/carsapp/app/controllers/home_controller.rb",
+		"/home/rails/Documents/used/go4usedcars.com/scss/_bordered-pulled.scss",
+		"/home/rails/projects/usedcars/Rakefile",
+		"/home/rails/admin/addavehicle.php",
+		"/home/rails/admin/index.php",
+		"/home/rails/admin/internalsearch.php",
+		"/home/rails/admin/add_carspecification.php",
+		"/home/rails/admin/addimagestogallery.php",
+		"/home/rails/admin/addnote.php",
+		"/home/rails/projects/twelve-week-year/app/views/achieve/goals/team_plan/show.html.erb",
+		"/home/rails/projects/twelve-week-year/app/views/shared/_main_nav.html.erb"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"/home/rails/projects/DM/dinemediacom/app/assets/stylesheets/css",
+			"/home/rails/projects/carsapp/app",
+			"/home/rails/projects/carsapp",
+			"/home/rails/projects/carsapp/app",
+			"/home/rails/projects/carsapp",
+			"/home/rails/projects/carsapp/app",
+			"/home/rails/projects/twelve-week-year/app/views",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"section-colorizedbg",
+			"id",
+			"asset",
+			"image",
+			"def",
+			"ui-bg_flat_75_ffffff_40x100.png",
+			"ui-bg_glass_75_e6e6e6_1x400.pn",
+			"images/ui-bg_glass_75_e6e6e6_1x400.pn",
+			"/assets/ui-bg_glass_75_e6e6e6_1x400.png",
+			"ui-bg_glass_75_e6e6e6_1x400.png",
+			"/assets/css/images/ui-bg_glass_75_e6e6e6_1x400.png",
+			"images",
+			"      \n",
+			"<%#=",
+			"full-plan",
+			"nav nav--secondary",
+			"create new team plan",
+			"render chart"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"/assets"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "footer-divider.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"seeds.rb",
+				"db/seeds.rb"
+			],
+			[
+				"routes.rb",
+				"config/routes.rb"
+			],
+			[
+				"homes/",
+				"app/views/homes/index.html.erb"
+			],
+			[
+				"team_goals",
+				"app/views/achieve/goals/team_plan/_team_goals.html.erb"
+			],
+			[
+				"addteamgoal",
+				"db/migrate/20140524135759_add_team_plan_to_goals.rb"
+			],
+			[
+				"marketplace/plan",
+				"app/views/marketplace/_plan.html.erb"
+			],
+			[
+				"_team_goals.html",
+				"app/views/achieve/goals/team_plan/_team_goals.html.erb"
+			],
+			[
+				"plan",
+				"app/models/plan.rb"
+			],
+			[
+				"seed",
+				"db/seeds.rb"
+			],
+			[
+				"application_helper.rb",
+				"app/helpers/application_helper.rb"
+			],
+			[
+				"achieve/goals/team/show.html.erb",
+				"app/views/achieve/goals/team_plan/show.html.erb"
+			],
+			[
+				"shared",
+				"app/views/shared/_header.html.erb"
+			],
+			[
+				"layouts/",
+				"app/views/layouts/achieve.html.erb"
+			],
+			[
+				"goals_controller",
+				"app/controllers/achieve/goals_controller.rb"
+			],
+			[
+				"achieve.ht",
+				"app/views/layouts/achieve.html.erb"
+			],
+			[
+				"seed.rb",
+				"db/seeds.rb"
+			],
+			[
+				"seeds",
+				"db/seeds.rb"
+			],
+			[
+				"goal",
+				"app/models/goal_journal.rb"
+			],
+			[
+				"gemfile",
+				"Gemfile"
+			],
+			[
+				"daindex",
+				"app/views/dashboard/index.html.erb"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 330.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

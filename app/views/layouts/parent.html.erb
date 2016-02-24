@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parent</title>
+    <link rel="shortcut icon" href="/assets/favicon.png" />
+    
+    <% ['notice', 'error', 'warning'].each do |f|%>
+      <% if flash[f.to_sym]%>
+        <script type="text/javascript" >
+          jQuery(function () {
+            jQuery.notifyBar({
+              cls: "<%= f %>",
+              html: "<%=  flash[f.to_sym] %>",
+              delay: 3000,
+              animationSpeed: "normal"
+            });
+          });
+        </script>
+      <%end%>
+    <%end%>
+    <style>
+      body { padding-top: 60px; }
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="nav-collapse collapse">
+            <ul class="nav" style="margin: -8px 10px 0 0;">
+              <li class="<%= (params[:controller] == 'parent/dashboards'&& params[:action] == 'index') ? "active" : ""  %>"><%= link_to "Dashboard", parent_dashboards_path, :class => "menubanneritem button" %></li>
+              
+            </ul>
+            <ul class="nav pull-right">
+              <div class="btn-group">
+                <%#= link_to "Sign out", destroy_parent_session_path,:method => 'delete', :class => "menubanneritem button" %>
+               <%= link_to "Sign out",  parent_sign_out_path, :method => "get"%> 
+
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="max-height:545px;">
+      <div class="container">
+        <div class="row-fluid">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+    <div id='overlay' style='filter:alpha(opacity=50);'></div>
+    <div align='center' id='popup_box'>
+      <div style='float: right; margin-top: -40px;margin-right:-40px'>
+      </div>
+      <div id='popup_body' style='float:right'></div>
+    </div>
+    <%= render :partial => 'layouts/google_analytics' if Rails.env == 'production' %>
+  </body>
+</html>

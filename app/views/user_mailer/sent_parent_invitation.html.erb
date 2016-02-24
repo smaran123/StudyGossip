@@ -1,0 +1,3 @@
+Hi <%= @parent.email %>
+
+You are invited for this <%= @parent.first_name %> school please join my website <%= link_to "here", "#{SITE}/parents/#{@parent.id}/edit?reset_password_token=#{@parent.reset_password_token}" %>

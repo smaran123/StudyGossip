@@ -1,0 +1,88 @@
+<div class="row">
+  <div class="col-sm-6">
+  <h2><span>For individuals </span></h2>
+    <%= form_for @payment, url: post_ind_payment_home_index_path(user_type: 'individual'), :method => "POST", remote: true do |f| %>
+      <div class="error-form"></div>
+      <div class="row">
+        <div class="col-sm-12">
+          <p class="left-margin"><b>Select Amount: <strong class="text-success">(50 USD per Student)</strong></b></p>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "50", :checked => true %> 50</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "100" %> 100</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "150" %> 150</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "200" %> 200</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "250" %> 250</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "300" %> 300</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "350" %> 350</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "400" %> 400</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "450" %> 450</div>
+            <div class="col-sm-2"><%= f.radio_button :payment_amount, "500" %> 500</div>
+         </div>   
+      </div>
+
+      <br/>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <%= f.submit "Pay as Individual", class: 'btn btn-sm btn-warning left-margin' %>
+        </div>
+      </div>
+  <% end %>
+</div>
+
+<div class="col-sm-6">
+  <h2>For educational institutions  </h2>
+
+  <%= form_for @payment1, url: post_institute_payment_home_index_path(user_type: 'institute'), :method => "POST", remote: true do |f| %>
+    <div class="error-form1"></div>
+
+    <div class="row">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <p class="left-margin"><b>Enter No of Students: <stong class="text-success">(50 USD per Student)</strong></b></p>
+            <div class="col-sm-6"><%= f.text_field :no_of_students, placeholder: "no of students", :class => "form-control studentNo" %></div><span class="estar">*</span> &nbsp; &nbsp; * 50 + Fee ( 999 )
+          </div>
+            <%= f.hidden_field :stu_field_validate, :value => "no_of_students" %>
+            <div class="col-sm-6"><%= f.text_field :payment_amount, class: 'form-control netAmount', placeholder: "Total Amount" %></div><span class="estar">*</span> &nbsp; &nbsp; Grand Total
+         </div>   
+      </div>
+
+      <br/>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <%= f.submit "Pay as Institute", class: 'btn btn-sm btn-warning left-margin btn-pay' %>
+        </div>
+
+        <div class="col-sm-6">
+          <div class='btn btn-sm btn-warning left-margin clearit'>
+          Clear
+          </div>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>
+
+<style>
+  .left-margin { margin-left: 15px; }
+  .estar {color: red; font-size: 18px; margin-left: -13px;}
+</style>
+
+<script>
+ $(document).on("click", ".clearit", function(e) {
+  document.getElementById("payment_payment_amount").value= "";
+  document.getElementById("payment_no_of_students").value= "";
+ });
+
+ $(document).on("keyup", ".studentNo", function(e) {
+  var obj = $(".studentNo").val();
+  if (obj == 0) {
+    var total = 0
+  } else {    
+    var total = ((obj * 50) + 999);
+  }
+   $("#payment_payment_amount").val(total);
+ });
+</script>

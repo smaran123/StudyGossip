@@ -1,0 +1,5 @@
+<% if params[:captcha_error].present? || params[:name_error].present? || params[:email_error].present? || params[:message_error].present? %>
+$("#contact_us").html('<%= escape_javascript render :partial => "contact" %>');
+<% else %>
+window.location.reload(true);
+<% end %>

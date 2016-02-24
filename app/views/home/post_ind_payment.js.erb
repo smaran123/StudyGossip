@@ -1,0 +1,5 @@
+<% if @payment.errors.any? %>
+  $(".error-form").html('<%= escape_javascript render :partial => "error" %>');
+<% else %>
+  window.location.href = '<%= checkout_home_path(@payment.merchant_order_id) %>'
+<% end %>

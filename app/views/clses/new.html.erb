@@ -1,0 +1,6 @@
+<h4>Class Creation</h4>
+<%= form_for(@class, :url => school_clses_path(@school),:method => :post, :html => {:class => "form-inline"}) do |f| %>
+<%=render :partial => "form", :locals =>{:f => f }%>
+<% end %>
+
+

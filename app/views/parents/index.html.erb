@@ -1,0 +1,70 @@
+<h4>Parents</h4>
+<% if @parents.present? %>
+  <table class="table table-striped" style="background:white;">
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    
+      <th>Status</th>
+     
+      
+      <th>Actions</th>
+    </tr>
+    <% for parent in @parents %>
+      <tr style="text-align: center;">
+        <td><%= parent.first_name %></td>
+        <td><%= parent.last_name %></td>
+        <% if parent.reset_password_token == nil %>
+          <td>
+            <%= link_to parent.email, school_parent_path(@school, parent) %>
+          </td>
+        <% else %>
+          <td><%= parent.email %></td>
+        <% end %>
+       
+        <td>
+          <% if parent.reset_password_token == nil %>
+            Joined
+          <% else %>
+            Invitation Sent
+          <% end %>
+        </td>
+        <td>
+        
+                 <%= link_to "Delete", school_parent_path(@school,parent), :remote => true, :method => :delete, :class=>"btn btn-danger",:confirm => "Are You Sure?" %> 
+        </td>
+      </tr>
+    <% end %>
+  </table>
+<% else %>
+  <span style="color: red;font-size: 15px;left: 120px;position: relative;top: -31px;">No Parents.</span>
+<% end %>
+<%= link_to "Back to Dashboard",school_path(@school),:class=>"btn btn-default" %>
+
+<style>
+  .btn-danger:hover{
+    color:white;
+  }
+  .btn-primary:hover{
+    color:white;
+  }
+  .btn-success:hover{
+    color:white;
+  }
+
+  .table td  {
+    border-top: 1px solid #DDDDDD;
+    line-height: 20px;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+  }
+  .table th{
+    border-top: 1px solid #DDDDDD;
+    line-height: 20px;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+  }
+</style>
