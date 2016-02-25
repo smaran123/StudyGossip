@@ -17,8 +17,12 @@ class ParentsController < ApplicationController
     @parent = @school.parents.new(params[:parent])
     @parent.password = 'abcxyz'
     @parent.password_confirmation = 'abcxyz'
+    #if @parent.email.blank?
     if @parent.save
-           @parent.send_reset_password_instructions
+      @parentuser = Parentuser.create(:parent_id => @parent.id, :user_id => params[:id], :email => @parent.email,:school_admin_id => @school.id)
+      @parentuser.save 
+   # end
+         @parent.send_reset_password_instructions
       flash[:notice] = "Sccessfully Send invitation to student"
     #  UserMailer.sent_parent_invitation(@school,@parent).deliver
       redirect_to school_path(@school)
@@ -27,6 +31,7 @@ class ParentsController < ApplicationController
       render :action => 'new'
     end
   end
+
 
   def edit
     @parent = Parent.find(params[:id])

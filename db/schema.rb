@@ -158,6 +158,7 @@ ActiveRecord::Schema.define(:version => 20160224103514) do
   create_table "parentusers", :force => true do |t|
     t.integer  "user_id"
     t.integer  "parent_id"
+    t.string   "email"
     t.integer  "school_admin_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
