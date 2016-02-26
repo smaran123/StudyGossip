@@ -28,7 +28,7 @@ class StudentsController < ApplicationController
     @school = SchoolAdmin.find(params[:school_id])
     @students = User.where("school_admin_id = '#{current_school_admin.id}' AND role = 'student'").all
     @parent = Parent.new
-  end
+   end
 
   def edit
     @student = User.find(params[:id])

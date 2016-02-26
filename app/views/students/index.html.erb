@@ -40,10 +40,10 @@
         <%#= link_to "ContactParent", new_school_parent_path(@school), :class => "btn btn-primary"%>
         <% @parentuser = Parentuser.find_by_user_id(school.id) %>
         <% if  @parentuser.blank? %>
-        <%= link_to 'ContactParent', '#new_person_modal', 'data-toggle' => 'modal', :class => "btn btn-primary" %>
-<% else %>
-<p>Assigend the Parent</p>
-<% end %>
+                <%= link_to 'ContactParent', "#",:onclick => "parent()", :class => "btn btn-primary"%>
+        <% else %>
+        <p>Assigend the Parent</p>
+        <% end %>
           <% if school.reset_password_token == nil %>
             <%= link_to "View Posts", posts_school_student_path(@school, school),:class=>"btn btn-primary"%> |
           <% end %>
@@ -92,38 +92,9 @@
         <h4 class="modal-title" id="myModalLabel">Send Invitation To Parent</h4>
       </div>
       <div class="modal-body">
-        <%# Render the new person form (passing modal => true to enable remote => true) %>
-       <%#=  link_to "asdf", new_school_parent_path(@school), :class => "special_button"%>
-   <%= form_for(@parent, :url => school_parents_path(@school, :id => school.id),:html => {:id => "commentForm"}) do |f| %>
-    <table>
-      <tr>
-        <td valign="top">First Name:</td>
-        <td><%= f.text_field :first_name, :class => 'required', :id => "cfame"%></td>
-      </tr>
-      <tr>
-        <td valign="top">Last Name:</td>
-        <td><%= f.text_field :last_name, :class => 'required', :id => "clame"%></td>
-      </tr>
-      <tr>
-        <td valign="top">Email:</td>
-        <td><%= f.text_field :email, :class => 'text required email', :id => "inputEmail" %></td>
-        <td><%= validation_error(@parent.errors["email"])%></td>
-      </tr>
-      <tr>
-    <!--  <td valign="top">Student Name:</td>  -->
-        <td><%#= select_tag :user_id,  options_for_select([["Select", ""]] + User.where("school_admin_id = #{current_school_admin.id}", "role = #{"student"} ").map{|ic| [ic.first_name,ic.id]}) %>
-         <%#= select_tag :user_id,  options_for_select([["Select", ""]] + User.where(role: "student").map{|ic| [ic.first_name,ic.id]}) %>
-         <%= hidden_field_tag :user_id %></td>
-         <%= school.first_name %>
+     <%= render :partial => "/parents/new" %>
 
-            <%= school.id %>    
-      </tr>
-      <tr>
-        <td></td>
-        <td><%= f.submit "Send Invitation", :class => 'btn'%></td>
-      </tr>
-    </table>
-  <% end %>
+
       </div>
 
      
@@ -135,5 +106,19 @@
 </div>
 
 <script>
+
+  function parent(){
+    $("#new_person_modal").modal();
+  }
+
   $("#commentForm").validate();
 </script>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+<div>
+  <%= form_for(@parent, :url => school_parents_path(@school, :user_id => @student.id),:html => {:id => "commentForm"}) do |f| %>
+<%= hidden_field_tag :user_id, params[:school].id%>
+<%= params[:user_id].inspect %>
+    <table>
+      <tr>
+        <td valign="top">First Name:</td>
+        <td><%= f.text_field :first_name, :class => 'required', :id => "cfame"%></td>
+      </tr>
+      <tr>
+        <td valign="top">Last Name:</td>
+        <td><%= f.text_field :last_name, :class => 'required', :id => "clame"%></td>
+      </tr>
+      <tr>
+        <td valign="top">Email:</td>
+        <td><%= f.text_field :email, :class => 'text required email', :id => "inputEmail" %></td>
+        <td><%= validation_error(@parent.errors["email"])%></td>
+      </tr>
+        <tr>
+        <td></td>
+        <td><%= f.submit "Send Invitation", :class => 'btn'%></td>
+      </tr>
+    </table>
+  <% end %>
+  
+</div>
+<script>
+  $("#commentForm").validate();
+</script>
+
+
+        
